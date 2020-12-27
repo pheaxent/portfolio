@@ -1,0 +1,68 @@
+/* Universal Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-weight: normal;
+}
+
+:root {
+    --blue-color: #0A1A37;
+    --orange-color: #EC5E10;
+    --i-love-glitter-font: 'I Love Glitter';
+    --jost-light-font: 'Jost Light';
+    --jost-book-font: 'Jost Book';
+    --poppins-light-font: 'Poppins Light';
+    --poppins-regular-font: 'Poppins Regular';
+    --poppins-medium-font: 'Poppins Medium';
+    --poppins-semi-bold-font: 'Poppins SemiBold';
+}
+
+@font-face {
+    font-family: 'I Love Glitter';
+    src: url('../fonts/glitter/i-love-glitter.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Jost Light';
+    src: url('../fonts/jost/Jost-300-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Jost Book';
+    src: url('../fonts/jost/Jost-400-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    src: url('../fonts/poppins/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../fonts/poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+/* Header Section */
+
+header {
+    
+}
