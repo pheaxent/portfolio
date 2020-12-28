@@ -61,8 +61,179 @@ body {
     src: url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
 }
 
-/* Header Section */
+/* Header */
 
 header {
-    
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-color);
+    padding-top: 40px;
+    background-image: url('../images/svg/background-illustartion.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+/* Navigation Section */
+nav {
+    width: 88%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo-container p {
+    font-family: var(--i-love-glitter-font);
+    font-size: 2.3rem;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navigation-list {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation-list ul {
+    list-style-type: none;
+}
+
+.navigation-list ul li {
+    font-family: var(--jost-light-font);
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.navigation-list ul li a {
+    margin-left: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.call-to-action-button {
+    flex: .8;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.call-to-action-button button {
+    background-color: var(--orange-color);
+    border-radius: 29px;
+    border: none;
+    padding: 0.5rem 2rem;
+}
+
+.call-to-action-button button a {
+    text-decoration: none;
+    font-family: var(--jost-book-font);
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Main Heading Section */
+
+#main-heading-section {
+    width: 88%;
+    height: 400px;
+    margin: 120px auto 165px;
+    display: flex;
+}
+
+#main-heading {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.heading-content p {
+    font-family: var(--poppins-medium-font);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.heading-content h1 {
+    font-family: var(--poppins-semi-bold-font);
+    font-size: 2.8rem;
+    color: var(--orange-color);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.heading-content .main-heading-description {
+    font-family: var(--poppins-light-font);
+    font-size: 0.85rem;
+    text-transform: none;
+}
+
+#main-heading .call-to-action-button {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 0px 20px;
+}
+
+#main-heading .call-to-action-button a {
+    padding: 0.4rem 2rem;
+    display: inline-block;
+}
+
+
+/* Follow Us Section */
+.follow-us {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: baseline;
+}
+
+.follow-us p {
+    font-family: var(--poppins-regular-font);
+    font-size: 1rem;
+    color: white;
+    margin-right: 1rem;
+}
+
+#social-media-icons {
+    list-style-type: none;
+}
+
+#social-media-icons li {
+    display: inline-block;
+}
+
+#social-media-icons li a {
+    text-decoration: none;
+    margin-right: 0.7rem;
+}
+
+#social-media-icons li a .fab {
+    color: white;
+}
+
+/* Right Side */
+#team-illustartion {
+    width: 50%;
+    height: auto;
+}
+
+#team-illustartion img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+
+#our-services {
+    width: 100%;
+    height: 1000px;
+    background-color: #ebebeb;
+}
+
