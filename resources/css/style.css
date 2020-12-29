@@ -66,9 +66,10 @@ body {
 
 header#hero-area {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: var(--blue-color);
     padding-top: 40px;
+    padding-bottom: 25px;
     background-image: url('../images/svg/background-illustartion.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -142,7 +143,7 @@ nav {
 #main-heading-section {
     width: 88%;
     height: 400px;
-    margin: 120px auto 165px;
+    margin: 120px auto 0px;
     display: flex;
 }
 
@@ -283,13 +284,13 @@ nav {
 
 #our-services header h2::after {
     content: '';
-    width: 100px;
+    width: 20%;
     height: 3px;
     border-radius: 10px;
     background-color: var(--blue-color);
     position: absolute;
     bottom: 0;
-    left: 39.2%;
+    left: 39.3%;
     transform: translateY(10px);
     opacity: 0.9;
 }
@@ -314,12 +315,12 @@ nav {
     background-color: #F1F1F1;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
     border-radius: 5px;
-    padding: 3rem 1.2rem;
+    padding: 2.8rem 1.2rem;
     text-align: center;
 }
 
-.service figure img {
-    width: 70px;
+ .service figure img {
+    width: 65px;
     height: auto;
 }
 
@@ -340,7 +341,7 @@ nav {
     letter-spacing: -1.5px;
     color: var(--orange-color);
     text-transform: uppercase;
-    margin-top: 0.8rem;
+    margin-top: 2rem;
 }
 
 .service p {
@@ -424,6 +425,7 @@ nav {
     color: #ffffff;
     position: relative;
     margin-bottom: 1.8rem;
+    text-transform: uppercase;
 }
 
 .about-us-content h2::before {
@@ -472,6 +474,203 @@ nav {
 
 #portfolio {
     width: 100%;
-    height: 600px;
+    height: auto;
     background-color: #ebebeb;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+    background-image: url('../images/svg/polygon-shapes.svg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 0 -140px;
+}
+
+#portfolio header {
+    width: 36%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto 6rem;
+}
+
+#portfolio header h2 span {
+    font-family: var(--poppins-regular-font);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--blue-color);
+    letter-spacing: -0.5px;
+}
+
+#portfolio header h2 {
+    font-family: var(--poppins-medium-font);
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    color: var(--orange-color);
+    text-transform: uppercase;
+    position: relative;
+}
+
+#portfolio header h2::after {
+    content: '';
+    width: 20%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--blue-color);
+    position: absolute;
+    bottom: 0;
+    left: 39.3%;
+    transform: translateY(10px);
+    opacity: 0.9;
+}
+
+#portfolio header p {
+    font-family: var(--poppins-regular-font);
+    font-size: 0.9rem;
+    color: var(--blue-color);
+    margin-top: 1.5rem;
+}
+
+#portfolio-projects {
+    margin: auto;
+    width: 88%;
+    height: auto;
+    display: grid;
+    grid-template: repeat(3, 250px) / repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+#portfolio-projects .project {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project-1 {
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-image: url('../images/projects/project-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-2 {
+    grid-area: 1 / 2 / span 1 / span 1;
+    background-image: url('../images/projects/project-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-3 {
+    grid-area: 1 / 3 / span 1 / span 1;
+    background-image: url('../images/projects/project-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-4 {
+    grid-area: 1 / 4 / span 1 / span 1;
+    background-image: url('../images/projects/project-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-5 {
+    grid-area: 2 / 1 / span 1 / span 1;
+    background-image: url('../images/projects/project-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-6 {
+    grid-area: 2 / 2 / span 1 / span 2;
+    background-image: url('../images/projects/project-6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-7 {
+    grid-area: 2 / 4 / span 1 / span 1;
+    background-image: url('../images/projects/project-7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-8 {
+    grid-area: 3 / 1 / span 1 / span 2;
+    background-image: url('../images/projects/project-8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-9 {
+    grid-area: 3 / 3 / span 1 / span 1;
+    background-image: url('../images/projects/project-9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.project-10 {
+    background-color: var(--blue-color);
+    padding: 1.5rem 2rem;
+}
+
+.project-10 h3 span {
+    font-family: var(--poppins-light-font);
+    font-size: 0.9rem;
+}
+
+.project-10 h3 {
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: var(--poppins-medium-font);
+    line-height: 1.4;
+}
+
+.project-10 p {
+    color: #ffffff;
+    font-family: var(--poppins-light-font);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.project-10 a {
+    font-family: var(--poppins-regular-font);
+    color: var(--orange-color);
+    text-decoration: none;
+    padding-bottom: 1rem;
+    display: inline-block;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.project-10 a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--orange-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-15px);
 }
