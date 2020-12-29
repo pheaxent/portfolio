@@ -8,6 +8,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -233,20 +234,20 @@ nav {
 
 #our-services {
     width: 100%;
-    height: 1000px;
+    height: 850px;
     background-color: #ebebeb;
-    padding-top: 7.5rem;
+    padding-top: 6.5rem;
     background-image: url('../images/svg/polygon-shapes.svg');
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
-    background-position: 0 -120px;
+    background-position: 0 -140px;
 }
 
 #our-services header {
     width: 36%;
     height: auto;
     text-align: center;
-    margin: 0 auto 7.5rem;
+    margin: 0 auto 6rem;
 }
 
 #our-services header h2 span {
@@ -291,7 +292,7 @@ nav {
 #services-list {
     margin: auto;
     width: 88%;
-    height: 350px;
+    height: 380px;
     display: grid;
     grid-template: repeat(1, 100%) / repeat(4, 1fr);
     grid-column-gap: 10px;
@@ -301,7 +302,55 @@ nav {
     background-color: #F1F1F1;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
     border-radius: 5px;
+    padding: 3rem 1.2rem;
+    text-align: center;
+}
 
+.service figure img {
+    width: 70px;
+    height: auto;
+}
+
+.service h3 span {
+    font-family: var(--poppins-regular-font);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--blue-color);
+    letter-spacing: -0.5px;
+}
+
+.service h3 {
+    font-family: var(--poppins-semi-bold-font);
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: var(--orange-color);
+    text-transform: uppercase;
+    margin-top: 0.8rem;
+}
+
+.service p {
+    font-family: var(--poppins-regular-font);
+    font-size: 0.9rem;
+    color: var(--blue-color);
+    margin-top: 0.5rem;
+}
+
+.service button {
+    background-color: var(--blue-color);
+    border-radius: 29px;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin-top: 2.5rem;
+}
+
+.service button a {
+    text-decoration: none;
+    font-family: var(--jost-book-font);
+    font-size: 0.9rem;
+    color: white;
 }
 
 #services-list .service-1 {
@@ -320,5 +369,10 @@ nav {
     grid-area: 1 / 4 / span 1 / span 1;
 }
 
+/* About Us */
 
-
+#about-us {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-color);
+}
