@@ -21,6 +21,7 @@ body {
     --i-love-glitter-font: 'I Love Glitter';
     --jost-light-font: 'Jost Light';
     --jost-book-font: 'Jost Book';
+    --jost-medium-font: 'Jost Medium';
     --poppins-light-font: 'Poppins Light';
     --poppins-regular-font: 'Poppins Regular';
     --poppins-medium-font: 'Poppins Medium';
@@ -40,6 +41,11 @@ body {
 @font-face {
     font-family: 'Jost Book';
     src: url('../fonts/jost/Jost-400-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Jost Medium';
+    src: url('../fonts/jost/Jost-500-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -250,9 +256,9 @@ nav {
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
     background-image: url('../images/svg/polygon-shapes.svg');
-    background-size: 110%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0 -140px;
+    background-position: 0 -100px;
 }
 
 #our-services header {
@@ -297,7 +303,7 @@ nav {
 
 #our-services header p {
     font-family: var(--poppins-regular-font);
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--blue-color);
     margin-top: 1.5rem;
 }
@@ -313,7 +319,7 @@ nav {
 
 #services-list .service {
     background-color: #F1F1F1;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 2.8rem 1.2rem;
     text-align: center;
@@ -326,7 +332,7 @@ nav {
 
 .service h3 span {
     font-family: var(--poppins-regular-font);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: normal;
     color: var(--blue-color);
@@ -334,11 +340,11 @@ nav {
 }
 
 .service h3 {
-    font-family: var(--poppins-semi-bold-font);
-    font-size: 1.6rem;
+    font-family: var(--poppins-medium-font);
+    font-size: 1.5rem;
     font-weight: normal;
-    line-height: 1.1;
-    letter-spacing: -1.5px;
+    line-height: 1.2;
+    letter-spacing: -1.4px;
     color: var(--orange-color);
     text-transform: uppercase;
     margin-top: 2rem;
@@ -479,9 +485,9 @@ nav {
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
     background-image: url('../images/svg/polygon-shapes.svg');
-    background-size: 110%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0 -140px;
+    background-position: 0 -100px;
 }
 
 #portfolio header {
@@ -526,7 +532,7 @@ nav {
 
 #portfolio header p {
     font-family: var(--poppins-regular-font);
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--blue-color);
     margin-top: 1.5rem;
 }
@@ -673,4 +679,383 @@ nav {
     bottom: 0;
     left: 0;
     transform: translateY(-15px);
+}
+
+/* Get A Quote */
+
+#get-a-quote {
+    width: 100%;
+    height: auto;
+    background-color: var(--blue-color);
+    padding: 5.5rem 0;
+    background-image: url('../images/svg/quote-illustration.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85px;
+}
+
+.quote-container {
+    width: 88%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.get-a-quote-form {
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-container {
+    width: 75%;
+}
+
+.get-a-quote-form header h2 {
+    font-family: var(--jost-book-font);
+    font-size: 2rem;
+    font-weight: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.get-a-quote-form header p {
+    color: #ffffff;
+    font-family: var(--poppins-light-font);
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+#form {
+    margin-top: 2rem;
+}
+
+#name {
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 14px 20px;
+    font-family: var(--poppins-regular-font);
+    margin-bottom: 12px;
+    border: none;
+}
+
+#email {
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 14px 20px;
+    font-family: var(--poppins-regular-font);
+    margin-bottom: 12px;
+    border: none;
+}
+
+#message {
+    width: 100%;
+    height: 130px;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 14px 20px;
+    font-family: var(--poppins-regular-font);
+    border: none;
+}
+
+.get-a-quote-form button {
+    background-color: var(--orange-color);
+    border-radius: 29px;
+    border: none;
+    padding: 0.8rem 3rem;
+    margin-top: 1.5rem;
+}
+
+.get-a-quote-form button a {
+    text-decoration: none;
+    font-family: var(--jost-book-font);
+    font-size: 0.9rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.quote-container .team-illustartion {
+    width: 55%;
+}
+
+/* Frequently Asked Questions */
+
+#frequently-asked-questions {
+    width: 100%;
+    height: auto;
+    background-color: #ebebeb;
+    padding: 6.5rem 0;
+    /*
+    background-image: url('../images/svg/polygon-shapes.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    */
+}
+
+#frequently-asked-questions .conatiner {
+    width: 88%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#frequently-asked-questions .header-area {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#frequently-asked-questions header p {
+    color: var(--blue-color);
+    font-family: var(--jost-medium-font);
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#frequently-asked-questions header h2 span {
+    color: var(--blue-color);
+}
+
+#frequently-asked-questions header h2 {
+    font-family: var(--poppins-medium-font);
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    color: var(--orange-color);
+    text-transform: uppercase;
+}
+
+#frequently-asked-questions header .description {
+    font-family: var(--poppins-regular-font);
+    font-size: 0.95rem;
+    color: var(--blue-color);
+    margin-top: 0.5rem;
+    text-transform: none;
+}
+
+#frequently-asked-questions a {
+    font-family: var(--poppins-regular-font);
+    color: var(--orange-color);
+    text-decoration: none;
+    padding-bottom: 1rem;
+    display: inline-block;
+    margin-top: 2rem;
+    position: relative;
+}
+
+#frequently-asked-questions a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--orange-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-15px);
+}
+
+#frequently-asked-questions .questions {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.questions-container {
+    width: 95%;
+    height: auto;
+}
+
+.question {
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 1rem 2rem;
+    background-color: #F1F1F1;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question h3 {
+    font-family: var(--poppins-regular-font);
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: var(--blue-color);
+}
+
+.question p {
+    font-family: var(--poppins-light-font);
+    font-size: 0.85rem;
+    color: #ffffff;
+    text-transform: none;
+    margin-left: 2rem;
+    margin-top: 1.1rem;
+}
+
+.fa-question-circle {
+    color: var(--orange-color);
+    margin-right: 1rem;
+}
+
+.fa-plus {
+    color: var(--blue-color);
+    margin-left: 4rem;
+    font-size: 0.7rem;
+}
+
+.fa-minus {
+    color: #ffffff;
+    margin-left: 4rem;
+    font-size: 0.7rem;
+}
+
+.question-1 {
+    background-color: var(--blue-color);
+    border-left: 5px solid var(--orange-color);
+}
+
+.question-1 h3 {
+    color: var(--orange-color);
+}
+
+/* Call To Action */
+
+#call-to-action {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: var(--blue-color);
+    /*
+    background-image: url('../images/svg/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    */
+}
+
+.cta-container {
+    width: 88%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.people-flying-illustration {
+    flex: 1;
+}
+
+.people-flying-illustration figure img {
+    width: 100%;
+    height: auto;
+}
+
+.cta-content {
+    flex: 2;
+    text-align: center;
+}
+
+.cta-content h2 span {
+    font-family: var(--poppins-regular-font);
+    font-size: 1.8rem;
+    color: #ffffff;
+
+}
+
+.cta-content h2 {
+    font-family: var(--poppins-medium-font);
+    font-weight: normal;
+    font-size: 2rem;
+    color: var(--orange-color);
+    line-height: 1.2;
+}
+
+.cta-content p {
+    font-family: var(--poppins-light-font);
+    font-size: 0.85rem;
+    color: #ffffff;
+    text-transform: none;
+    margin-top: 0.5rem;
+}
+
+.cta-content button {
+    background-color: var(--orange-color);
+    border-radius: 29px;
+    border: none;
+    padding: 0.8rem 3rem;
+    margin-top: 2.5rem;
+}
+
+.cta-content button a {
+    text-decoration: none;
+    font-family: var(--jost-book-font);
+    font-size: 0.9rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.universe-illustration {
+    flex: 1;
+}
+
+.universe-illustration figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--blue-color);
+    font-family: var(--poppins-light-font);
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+.footer-container {
+    width: 88%;
+    height: auto;
+    border-top: 1px solid #ebebeb;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.copyright {
+    flex: 1;
+}
+
+.information  {
+    text-align: right;
+    flex: 1;
+}
+
+.information ul {
+    list-style-type: none;
+}
+
+.information ul li {
+    display: inline-block;
+}
+
+.information ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 2rem;
 }
