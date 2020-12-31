@@ -325,6 +325,12 @@ nav {
     text-align: center;
 }
 
+.service .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
  .service figure img {
     width: 65px;
     height: auto;
@@ -550,6 +556,45 @@ nav {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
     border-radius: 5px;
     overflow: hidden;
+}
+
+#portfolio-projects .project .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.overlay ul {
+    list-style-type: none;
+}
+
+.overlay ul li {
+    display: inline-block;
+}
+
+.far, 
+.fas {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.fas {
+    margin-left: 1rem;
+}
+
+.far:hover,
+.fas:hover {
+    color: var(--orange-color);
+    transform: scale(1.5);
+    transition: all ease 0.1s;
+}
+
+#portfolio-projects .project:hover .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .project-1 {
