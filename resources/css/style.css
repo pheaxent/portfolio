@@ -124,6 +124,10 @@ nav {
     text-decoration: none;
 }
 
+.navigation-list ul li a:hover {
+    color: var(--orange-color);
+}
+
 .call-to-action-button {
     flex: .8;
     display: flex;
@@ -230,10 +234,11 @@ nav {
 #social-media-icons li a {
     text-decoration: none;
     margin-right: 0.7rem;
+    color: #ffffff;
 }
 
-#social-media-icons li a .fab {
-    color: white;
+#social-media-icons li a .fab:hover {
+    color: var(--orange-color);
 }
 
 /* Right Side */
@@ -325,13 +330,7 @@ nav {
     text-align: center;
 }
 
-.service .overlay {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-
- .service figure img {
+.service figure img {
     width: 65px;
     height: auto;
 }
@@ -573,21 +572,22 @@ nav {
     display: inline-block;
 }
 
-.far, 
-.fas {
+.overlay .far, 
+.overlay .fas {
     color: #ffffff;
     font-size: 1.2rem;
 }
 
-.fas {
+.overlay .fas {
     margin-left: 1rem;
 }
 
-.far:hover,
-.fas:hover {
+.overlay .far:hover,
+.overlay .fas:hover {
     color: var(--orange-color);
     transform: scale(1.5);
     transition: all ease 0.1s;
+    cursor: pointer;
 }
 
 #portfolio-projects .project:hover .overlay {
@@ -808,20 +808,17 @@ nav {
     border: none;
 }
 
-.get-a-quote-form button {
+.get-a-quote-form [type="submit"] {
     background-color: var(--orange-color);
     border-radius: 29px;
     border: none;
     padding: 0.8rem 3rem;
     margin-top: 1.5rem;
-}
-
-.get-a-quote-form button a {
-    text-decoration: none;
     font-family: var(--jost-book-font);
     font-size: 0.9rem;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .quote-container .team-illustartion {
@@ -951,6 +948,8 @@ nav {
 .fa-question-circle {
     color: var(--orange-color);
     margin-right: 1rem;
+    font-size: 1.2rem;
+    transform: translateY(2px);
 }
 
 .fa-plus {
@@ -963,6 +962,14 @@ nav {
     color: #ffffff;
     margin-left: 4rem;
     font-size: 0.7rem;
+}
+
+.fa-plus:hover,
+.fa-minus:hover {
+    color: var(--orange-color);
+    transform: scale(1.5);
+    transition: all ease 0.1s;
+    cursor: pointer;
 }
 
 .question-1 {
