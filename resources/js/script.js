@@ -1,3 +1,21 @@
+// Mobile Navigation 
+let menuIcon = document.querySelector('.menu-icon svg');
+let arrowIcon = document.getElementById('arrow-icon');
+let menu = document.getElementById('menu');
+let navigationLinks = document.querySelectorAll('.nav-link');
+
+function displayMobileNavigation() {
+    menu.style.left = 0;
+}
+
+function hideMobileNavigation() {
+    menu.style.left = '100%';
+}
+
+menuIcon.addEventListener('click', displayMobileNavigation);
+arrowIcon.addEventListener('click', hideMobileNavigation);
+navigationLinks.forEach(link => link.addEventListener('click', hideMobileNavigation));
+
 // Form Validation
 
 let form = document.getElementById('form');

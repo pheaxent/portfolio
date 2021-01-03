@@ -82,8 +82,8 @@ header#hero-area {
     background-position: center;
 }
 
-/* Navigation Section */
-nav {
+/* Desktop Navigation Section */
+#desktop-navigation {
     width: 88%;
     margin: auto;
     display: flex;
@@ -102,29 +102,29 @@ nav {
     justify-content: flex-start;
 }
 
-.navigation-list {
+.desktop-navigation-list {
     flex: 3;
     display: flex;
     justify-content: flex-end;
 }
 
-.navigation-list ul {
+.desktop-navigation-list ul {
     list-style-type: none;
 }
 
-.navigation-list ul li {
+.desktop-navigation-list ul li {
     font-family: var(--jost-light-font);
     font-size: 1rem;
     display: inline-block;
 }
 
-.navigation-list ul li a {
+.desktop-navigation-list ul li a {
     margin-left: 2rem;
     color: white;
     text-decoration: none;
 }
 
-.navigation-list ul li a:hover {
+.desktop-navigation-list ul li a:hover {
     color: var(--orange-color);
 }
 
@@ -146,6 +146,108 @@ nav {
     font-family: var(--jost-book-font);
     font-size: 0.9rem;
     color: white;
+}
+
+/* Mobile Navigation Section */
+
+#mobile-navigation {
+    display: none;
+}
+
+@media only screen and (max-width: 430px) {
+    #desktop-navigation {
+        display: none;
+    }
+
+    header#hero-area {
+        padding-top: 25px;
+        height: 100vh;
+        background-position: -100px -10px;
+    }
+
+    #mobile-navigation {
+        display: block;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .mobile-logo-container {
+        width: 88%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #menu {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transition: all 200ms ease-in;
+        background-color: rgba(10, 26, 55, 0.97);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-icon {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-icon svg:hover {
+        cursor: pointer;
+    }
+
+    .menu-icon svg:hover #Line_1,
+    .menu-icon svg:hover #Line_2,
+    .menu-icon svg:hover #Line_3 {
+        stroke: var(--orange-color);
+    }
+
+    #arrow-icon {
+        position: absolute;
+        top: 24px;
+        right: 25px;
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #arrow-icon:hover {
+        color: var(--orange-color);
+        cursor: pointer;
+    }
+
+    .mobile-navigation-list {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .mobile-navigation-list ul {
+        list-style-type: none;
+    }
+    
+    .mobile-navigation-list ul li {
+        font-family: var(--jost-light-font);
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 1em;
+    }
+    
+    .mobile-navigation-list ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .mobile-navigation-list ul li a:hover {
+        color: var(--orange-color);
+    }
 }
 
 /* Main Heading Section */
@@ -207,6 +309,19 @@ nav {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 430px) {
+    #main-heading {
+        width: 100%;
+    }
+
+    .heading-content h1 {
+        font-size: 2rem;
+    }
+
+    .heading-content .main-heading-description {
+        font-size: 0.77rem;
+    }
+}
 
 /* Follow Us Section */
 .follow-us {
@@ -250,6 +365,12 @@ nav {
 .team-illustartion img {
     max-width: 100%;
     height: auto;
+}
+
+@media only screen and (max-width: 430px) {
+    .team-illustartion {
+        display: none;
+    }
 }
 
 /* Services Section */
@@ -924,7 +1045,7 @@ nav {
 .accordion[aria-expanded="false"] {
     width: 100%;
     max-height: 3.5rem;
-    transition: max-height 200ms linear, background-color 200ms linear;
+    transition: max-height 200ms linear, background-color 100ms linear;
     border-radius: 5px;
     margin-bottom: 12px;
     padding: 1rem 2rem;
@@ -969,7 +1090,7 @@ nav {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 200ms linear, opacity 200ms linear;
+    transition: max-height 200ms linear, opacity 100ms linear;
 }
 
 .fa-question-circle {
