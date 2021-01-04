@@ -1,5 +1,7 @@
 /* Universal Styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -164,7 +166,7 @@ header#hero-area {
 
     header#hero-area {
         padding-top: 28px;
-        height: 93vh;
+        height: 92vh;
         width: 100%;
         background-position: -100px -10px;
     }
@@ -188,7 +190,7 @@ header#hero-area {
     }
 
     #menu {
-        height: 93vh;
+        height: 92vh;
         width: 100%;
         box-sizing: border-box;
         position: absolute;
@@ -300,8 +302,8 @@ header#hero-area {
 }
 
 .heading-content .main-heading-description {
-    font-family: var(--poppins-light-font);
-    font-size: 0.85rem;
+    font-family: 'Didact Gothic', sans-serif;;
+    font-size: 1rem;
     text-transform: none;
 }
 
@@ -351,7 +353,7 @@ header#hero-area {
     }
 
     #main-heading .call-to-action-button {
-        margin-bottom: 30px;
+        margin: 30px 0px 30px;
     }
 }
 
