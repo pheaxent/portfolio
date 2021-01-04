@@ -159,7 +159,7 @@ header#hero-area {
     display: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
     #desktop-navigation {
         display: none;
     }
@@ -272,7 +272,7 @@ header#hero-area {
 
 #main-heading-section {
     width: 88%;
-    height: 400px;
+    height: 430px;
     margin: 120px auto 0px;
     display: flex;
 }
@@ -328,7 +328,7 @@ header#hero-area {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
     #main-heading-section {
         margin-top: 100px;
     }
@@ -339,8 +339,8 @@ header#hero-area {
 
     .heading-content h1 {
         font-size: 2.2rem;
-        line-height: 1.25;
-        font-family: var(--jost-book-font);
+        line-height: 1.1;
+        font-family: var(--poppins-semi-bold-font);
         margin-bottom: 10px;
     }
 
@@ -354,7 +354,7 @@ header#hero-area {
     }
 
     #main-heading .call-to-action-button {
-        margin: 35px 0px 30px;
+        margin: 40px 0px 30px;
     }
 }
 
@@ -391,7 +391,7 @@ header#hero-area {
     color: var(--orange-color);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
     #social-media-icons li a {
         color: var(--off-white-color);
     }
@@ -408,7 +408,7 @@ header#hero-area {
     height: auto;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
     .team-illustartion {
         display: none;
     }
