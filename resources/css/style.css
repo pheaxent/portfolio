@@ -18,6 +18,9 @@ body {
 :root {
     --blue-color: #0A1A37;
     --orange-color: #EC5E10;
+    --off-white-color: #f1f1f1;
+    --grey-color : #ebebeb;
+    --white-color: #ffffff;
     --i-love-glitter-font: 'I Love Glitter';
     --jost-light-font: 'Jost Light';
     --jost-book-font: 'Jost Book';
@@ -76,10 +79,6 @@ header#hero-area {
     background-color: var(--blue-color);
     padding-top: 40px;
     padding-bottom: 25px;
-    background-image: url('../images/svg/background-illustartion.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 /* Desktop Navigation Section */
@@ -97,7 +96,7 @@ header#hero-area {
 .logo-container p {
     font-family: var(--i-love-glitter-font);
     font-size: 2.3rem;
-    color: white;
+    color: var(--white-color);
     display: flex;
     justify-content: flex-start;
 }
@@ -120,7 +119,7 @@ header#hero-area {
 
 .desktop-navigation-list ul li a {
     margin-left: 2rem;
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -145,7 +144,7 @@ header#hero-area {
     text-decoration: none;
     font-family: var(--jost-book-font);
     font-size: 0.9rem;
-    color: white;
+    color: var(--white-color);
 }
 
 /* Mobile Navigation Section */
@@ -154,22 +153,22 @@ header#hero-area {
     display: none;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 400px) {
     #desktop-navigation {
         display: none;
     }
 
     header#hero-area {
         padding-top: 28px;
-        height: 90vh;
-        background-position: -100px -10px;
+        height: 93vh;
+        width: 100%;
     }
 
     #mobile-navigation {
         display: block;
         width: 100%;
+        height: auto;
         margin: auto;
-        align-items: center;
     }
 
     .mobile-logo-container {
@@ -179,28 +178,29 @@ header#hero-area {
         align-items: center;
     }
 
-    .mobile-logo-container .logo-container {
-        color: #F1F1F1;
+    #mobile-navigation .logo-container p {
+        color: var(--off-white-color);
     }
 
     #menu {
+        height: 93vh;
         width: 100%;
-        height: 90vh;
+        box-sizing: border-box;
         position: absolute;
         top: 0;
         left: 100%;
         transition: all 200ms ease-in;
-        background-color: rgba(10, 26, 55, 0.97);
+        background-color: rgba(235, 235, 235, 0.99);
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-right: 0;
     }
 
     .menu-icon {
         flex: 1;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
     }
 
     .menu-icon svg:hover {
@@ -210,7 +210,7 @@ header#hero-area {
     #Line_1,
     #Line_2,
     #Line_3 {
-        stroke: #F1F1F1;
+        stroke: var(--off-white-color);
     }
 
     .menu-icon svg:hover #Line_1,
@@ -222,8 +222,8 @@ header#hero-area {
     #arrow-icon {
         position: absolute;
         top: 24px;
-        right: 25px;
-        color: #ffffff;
+        right: 35px;
+        color: var(--blue-color);
         font-size: 2rem;
         font-weight: bold;
     }
@@ -236,7 +236,8 @@ header#hero-area {
     .mobile-navigation-list {
         width: 100%;
         height: auto;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .mobile-navigation-list ul {
@@ -251,7 +252,7 @@ header#hero-area {
     }
     
     .mobile-navigation-list ul li a {
-        color: white;
+        color: var(--blue-color);
         text-decoration: none;
     }
     
@@ -277,7 +278,7 @@ header#hero-area {
 
 .heading-content p {
     font-family: var(--poppins-medium-font);
-    color: #F1F1F1;
+    color: var(--off-white-color);
     font-size: 1rem;
     text-transform: uppercase;
     margin-bottom: 6px;
@@ -316,18 +317,24 @@ header#hero-area {
     text-decoration: none;
     font-family: var(--jost-book-font);
     font-size: 0.9rem;
-    color: white;
+    color: var(--white-color);
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 400px) {
+    #main-heading-section {
+        margin-top: 100px;
+    }
+
     #main-heading {
         width: 100%;
     }
 
     .heading-content h1 {
-        font-size: 2rem;
-        line-height: 1.2;
+        font-size: 2.2rem;
+        line-height: 1.25;
+        font-family: var(--jost-book-font);
+        margin-bottom: 10px;
     }
 
     .heading-content p {
@@ -336,6 +343,10 @@ header#hero-area {
 
     .heading-content .main-heading-description {
         font-size: 0.8rem;
+    }
+
+    #main-heading .call-to-action-button {
+        margin-bottom: 30px;
     }
 }
 
@@ -350,7 +361,7 @@ header#hero-area {
 .follow-us p {
     font-family: var(--poppins-regular-font);
     font-size: 1rem;
-    color: white;
+    color: var(--white-color);
     margin-right: 1rem;
 }
 
@@ -365,16 +376,16 @@ header#hero-area {
 #social-media-icons li a {
     text-decoration: none;
     margin-right: 0.7rem;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 #social-media-icons li a .fab:hover {
     color: var(--orange-color);
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 400px) {
     #social-media-icons li a {
-        color: #F1F1F1;
+        color: var(--off-white-color);
     }
 }
 
@@ -389,7 +400,7 @@ header#hero-area {
     height: auto;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 400px) {
     .team-illustartion {
         display: none;
     }
@@ -400,7 +411,7 @@ header#hero-area {
 #our-services {
     width: 100%;
     height: auto;
-    background-color: #ebebeb;
+    background-color: var(--grey-color);
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
     background-image: url('../images/svg/polygon-shapes.svg');
@@ -466,7 +477,7 @@ header#hero-area {
 }
 
 #services-list .service {
-    background-color: #F1F1F1;
+    background-color: var(--off-white-color);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 2.8rem 1.2rem;
@@ -517,7 +528,7 @@ header#hero-area {
     text-decoration: none;
     font-family: var(--jost-book-font);
     font-size: 0.9rem;
-    color: white;
+    color: var(--white-color);
 }
 
 #services-list .service-1 {
@@ -576,7 +587,7 @@ header#hero-area {
     font-family: var(--poppins-regular-font);
     font-size: 2rem;
     font-weight: normal;
-    color: #ffffff;
+    color: var(--white-color);
     position: relative;
     margin-bottom: 1.8rem;
     text-transform: uppercase;
@@ -602,7 +613,7 @@ header#hero-area {
 } 
 
 .about-us-content p {
-    color: #ffffff;
+    color: var(--white-color);
     font-family: var(--poppins-light-font);
     font-weight: normal;
     font-size: 0.9rem;
@@ -620,7 +631,7 @@ header#hero-area {
     text-decoration: none;
     font-family: var(--jost-book-font);
     font-size: 0.9rem;
-    color: white;
+    color: var(--white-color);
     text-transform: uppercase;
 }
 
@@ -629,7 +640,7 @@ header#hero-area {
 #portfolio {
     width: 100%;
     height: auto;
-    background-color: #ebebeb;
+    background-color: var(--grey-color);
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
     background-image: url('../images/svg/polygon-shapes.svg');
@@ -717,7 +728,7 @@ header#hero-area {
 
 .overlay .far, 
 .overlay .fas {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 1.2rem;
 }
 
@@ -832,7 +843,7 @@ header#hero-area {
 }
 
 .project-10 h3 {
-    color: #ffffff;
+    color: var(--white-color);
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1.6rem;
@@ -841,7 +852,7 @@ header#hero-area {
 }
 
 .project-10 p {
-    color: #ffffff;
+    color: var(--white-color);
     font-family: var(--poppins-light-font);
     font-size: 0.8rem;
     margin-top: 0.3rem;
@@ -905,12 +916,12 @@ header#hero-area {
     font-family: var(--jost-book-font);
     font-size: 2rem;
     font-weight: normal;
-    color: #ffffff;
+    color: var(--white-color);
     text-transform: uppercase;
 }
 
 .get-a-quote-form header p {
-    color: #ffffff;
+    color: var(--white-color);
     font-family: var(--poppins-light-font);
     font-weight: normal;
     font-size: 0.9rem;
@@ -959,7 +970,7 @@ header#hero-area {
     margin-top: 1.5rem;
     font-family: var(--jost-book-font);
     font-size: 0.9rem;
-    color: white;
+    color: var(--white-color);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -973,7 +984,7 @@ header#hero-area {
 #frequently-asked-questions {
     width: 100%;
     height: 600px;
-    background-color: #ebebeb;
+    background-color: var(--grey-color);
     padding: 6.5rem 0;
     /*
     background-image: url('../images/svg/polygon-shapes.svg');
@@ -1071,7 +1082,7 @@ header#hero-area {
     border-radius: 5px;
     margin-bottom: 12px;
     padding: 1rem 2rem;
-    background-color: #F1F1F1;
+    background-color: var(--off-white-color);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
@@ -1140,7 +1151,7 @@ header#hero-area {
 .accordion[aria-expanded="true"] .answer {
     font-family: var(--poppins-light-font);
     font-size: 0.85rem;
-    color: #ffffff;
+    color: var(--white-color);
     text-transform: none;
     margin-left: 2.3rem;
     margin-top: 1.1rem;
@@ -1160,7 +1171,7 @@ header#hero-area {
 
 .accordion[aria-expanded="true"] h3::before {
     content: '-';
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 1.35rem;
     position: absolute;
     top: 50%;
@@ -1210,7 +1221,7 @@ header#hero-area {
 .cta-content h2 span {
     font-family: var(--poppins-regular-font);
     font-size: 1.8rem;
-    color: #ffffff;
+    color: var(--white-color);
 
 }
 
@@ -1225,7 +1236,7 @@ header#hero-area {
 .cta-content p {
     font-family: var(--poppins-light-font);
     font-size: 0.85rem;
-    color: #ffffff;
+    color: var(--white-color);
     text-transform: none;
     margin-top: 0.5rem;
 }
@@ -1242,7 +1253,7 @@ header#hero-area {
     text-decoration: none;
     font-family: var(--jost-book-font);
     font-size: 0.9rem;
-    color: white;
+    color: var(--white-color);
     text-transform: uppercase;
 }
 
@@ -1263,13 +1274,13 @@ footer {
     background-color: var(--blue-color);
     font-family: var(--poppins-light-font);
     font-size: 0.85rem;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .footer-container {
     width: 88%;
     height: auto;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--grey-color);
     margin: auto;
     display: flex;
     align-items: center;
@@ -1295,6 +1306,6 @@ footer {
 
 .information ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white-color);
     margin-left: 2rem;
 }

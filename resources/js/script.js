@@ -5,7 +5,7 @@ let menu = document.getElementById('menu');
 let navigationLinks = document.querySelectorAll('.nav-link');
 
 function displayMobileNavigation() {
-    menu.style.left = 0;
+    menu.style.left = '5%';
 }
 
 function hideMobileNavigation() {
