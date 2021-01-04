@@ -79,6 +79,10 @@ header#hero-area {
     background-color: var(--blue-color);
     padding-top: 40px;
     padding-bottom: 25px;
+    background-image: url('../images/svg/background-illustartion.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Desktop Navigation Section */
@@ -162,6 +166,7 @@ header#hero-area {
         padding-top: 28px;
         height: 93vh;
         width: 100%;
+        background-position: -100px -10px;
     }
 
     #mobile-navigation {
