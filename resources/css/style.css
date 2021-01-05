@@ -196,7 +196,7 @@ header#hero-area {
         position: absolute;
         top: 0;
         left: 100%;
-        transition: all 200ms ease-in;
+        transition: all 200ms ease-out;
         background-color: rgba(235, 235, 235, 0.99);
         display: flex;
         flex-direction: column;
@@ -231,8 +231,7 @@ header#hero-area {
         top: 24px;
         right: 35px;
         color: var(--blue-color);
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 2.4rem;
     }
 
     #arrow-icon:hover {
@@ -252,10 +251,11 @@ header#hero-area {
     }
     
     .mobile-navigation-list ul li {
-        font-family: var(--jost-light-font);
-        font-size: 2rem;
+        font-family: var(--jost-book-font);
+        font-size: 1.6rem;
         display: block;
         margin-bottom: 1em;
+        text-transform: uppercase;
     }
     
     .mobile-navigation-list ul li a {
