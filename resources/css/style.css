@@ -93,6 +93,7 @@ header#hero-area {
     margin: auto;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .logo-container {
@@ -169,6 +170,7 @@ header#hero-area {
         height: auto;
         width: 100%;
         background-position: -100px -10px;
+        overflow: hidden;
     }
 
     #mobile-navigation {
@@ -193,7 +195,7 @@ header#hero-area {
         height: 111%;
         width: 100%;
         box-sizing: border-box;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 100%;
         transition: all 100ms ease-in-out;
@@ -202,6 +204,7 @@ header#hero-area {
         flex-direction: column;
         justify-content: center;
         border-right: 0;
+        z-index: 5;
     }
 
     .menu-icon {
