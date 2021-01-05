@@ -166,7 +166,7 @@ header#hero-area {
 
     header#hero-area {
         padding-top: 28px;
-        height: 92vh;
+        height: auto;
         width: 100%;
         background-position: -100px -10px;
     }
@@ -174,7 +174,7 @@ header#hero-area {
     #mobile-navigation {
         display: block;
         width: 100%;
-        height: auto;
+        height: 100%;
         margin: auto;
     }
 
@@ -190,7 +190,7 @@ header#hero-area {
     }
 
     #menu {
-        height: 92vh;
+        height: 111%;
         width: 100%;
         box-sizing: border-box;
         position: absolute;
@@ -229,7 +229,7 @@ header#hero-area {
     #arrow-icon {
         position: absolute;
         top: 24px;
-        right: 35px;
+        right: 25px;
         color: var(--blue-color);
         font-size: 2.4rem;
     }
@@ -555,6 +555,50 @@ header#hero-area {
     grid-area: 1 / 4 / span 1 / span 1;
 }
 
+@media only screen and (max-width: 400px) {
+    #our-services {
+        height: auto;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-image: none;
+    }
+
+    #our-services header {
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+
+    #our-services header h2 {
+        font-size: 2rem;
+    }
+
+    #our-services header p {
+        font-size: 0.95rem;
+    }
+
+    #services-list {
+        height: auto;
+        grid-template: repeat(4, 380px) / repeat(1, 1fr);
+        grid-row-gap: 10px;
+    }
+
+    #services-list .service-1 {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    
+    #services-list .service-2 {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    
+    #services-list .service-3 {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    
+    #services-list .service-4 {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+}
+
 /* About Us */
 
 #about-us {
@@ -641,6 +685,28 @@ header#hero-area {
     font-size: 0.9rem;
     color: var(--white-color);
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 400px) {
+    #about-us {
+        background-image: none;
+        padding: 3rem 0;
+    }
+
+    #about-us .team-illustartion {
+        display: none;
+    }
+
+    .about-us-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-us-content {
+        width: 100%;
+    }
 }
 
 /* Portfolio */
@@ -888,6 +954,73 @@ header#hero-area {
     transform: translateY(-15px);
 }
 
+@media only screen and (max-width: 400px) {
+    #portfolio {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-image: none;
+    }
+
+    #portfolio header {
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+
+    #portfolio header h2 {
+        font-size: 2rem;
+    }
+
+    #portfolio header p {
+        font-size: 0.95rem;
+    }
+
+    #portfolio-projects {
+        display: grid;
+        grid-template: repeat(10, 250px) / repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    .project-1 {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    
+    .project-2 {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    
+    .project-3 {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    
+    .project-4 {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+    
+    .project-5 {
+        grid-area: 5 / 1 / span 1 / span 1;
+    }
+    
+    .project-6 {
+        grid-area: 6 / 1 / span 1 / span 1;
+    }
+    
+    .project-7 {
+        grid-area: 7 / 1 / span 1 / span 1;
+    }
+    
+    .project-8 {
+        grid-area: 8 / 1 / span 1 / span 1;
+    }
+    
+    .project-9 {
+        grid-area: 9 / 1 / span 1 / span 1;
+    }
+
+    .project-10 {
+        grid-area: 10 / 1 / span 1 / span 1;
+    }
+}
+
 /* Get A Quote */
 
 #get-a-quote {
@@ -985,6 +1118,25 @@ header#hero-area {
 
 .quote-container .team-illustartion {
     width: 55%;
+}
+
+@media only screen and (max-width: 400px) {
+    #get-a-quote {
+        background-image: none;
+        padding: 3rem 0;
+    }
+
+    #get-a-quote .team-illustartion {
+        display: none;
+    }
+
+    .get-a-quote-form {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
 }
 
 /* Frequently Asked Questions */
@@ -1111,7 +1263,6 @@ header#hero-area {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    
 }
 
 .accordion[aria-expanded="false"] h3:hover {
@@ -1139,6 +1290,72 @@ header#hero-area {
     margin-right: 1rem;
     font-size: 1.2rem;
     transform: translateY(2px);
+}
+
+@media only screen and (max-width: 400px) {
+    #frequently-asked-questions {
+        width: 100%;
+        height: 970px;
+        background-color: var(--grey-color);
+        padding: 4rem 0;
+    }
+
+    #frequently-asked-questions .conatiner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    #frequently-asked-questions .header-area {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #frequently-asked-questions header h2 {
+        font-size: 1.9rem;
+    }
+    
+    #frequently-asked-questions header .description {
+        font-family: var(--poppins-regular-font);
+        font-size: 0.95rem;
+    }
+
+    #frequently-asked-questions a {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #frequently-asked-questions .questions {
+        width: 100%;
+    }
+    
+    .questions-container {
+        width: 100%;
+    }
+
+    .accordion[aria-expanded="false"] {
+        max-height: 5rem;
+        padding: 1rem 2rem 1rem 1.7rem;
+    }
+
+    .accordion[aria-expanded="false"] h3::before {
+        content: '+';
+        color: var(--blue-color);
+        font-size: 1.35rem;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        transform: translate(30%, -40%);
+    }
+
+    .accordion[aria-expanded="false"] .answer {
+        margin-left: 0;
+    }
+    
 }
 
 /* After toggle */
@@ -1185,6 +1402,27 @@ header#hero-area {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 400px) {
+    .accordion[aria-expanded="true"] {
+        max-height: 15rem;
+        padding: 1rem 2rem 1rem 1.7rem;
+    }
+
+    .accordion[aria-expanded="true"] .answer {
+        margin-left: 0;
+    }
+
+    .accordion[aria-expanded="true"] h3::before {
+        content: '-';
+        color: var(--white-color);
+        font-size: 1.35rem;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        transform: translate(30%, -40%);
+    } 
 }
 
 /* Call To Action */
@@ -1274,6 +1512,29 @@ header#hero-area {
     height: auto;
 }
 
+@media only screen and (max-width: 400px) {
+    .people-flying-illustration {
+        display: none;
+    }
+
+    .cta-content {
+        flex: 1;
+    }
+
+    .universe-illustration {
+        display: none;
+    }
+
+    
+    .cta-content h2 span {
+        font-size: 1.5rem;
+    }
+
+    .cta-content h2 {
+        font-size: 1.7rem;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -1316,4 +1577,19 @@ footer {
     text-decoration: none;
     color: var(--white-color);
     margin-left: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .information {
+        text-align: center;
+    }
+
+    .information {
+        display: none;
+    }
+
 }
